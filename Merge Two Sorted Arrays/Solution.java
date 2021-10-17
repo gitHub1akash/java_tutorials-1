@@ -1,30 +1,27 @@
 public class Solution {
-    /**
-     * @param A: sorted integer array A
-     * @param B: sorted integer array B
-     * @return: A new sorted integer array
-     */
-    public int[] mergeSortedArray(int[] A, int[] B) {
-        if (B == null || A == null)
+    
+  
+    public int[] mergeSortedArray(int[] xxx, int[] xnxx) {
+        if (xnxx == null || xxx == null)
             return null;
 
-        int C[] = new int[A.length + B.length];
+        int C[] = new int[xxx.length + xnxx.length];
 
         int j = 0; int k = 0; int i = 0;
 
-        while(i< A.length && j < B.length) {
-            if (A[i] < B[j]) {
-                C[k++] = A[i++];
+        while(i< xxx.length && j < xnxx.length) {
+            if (xxx[i] < xnxx[j]) {
+                C[k++] = xxx[i++];
             }
             else 
-                C[k++] = B[j++];
+                C[k++] = xnxx[j++];
         }
 
-        while(i < A.length)
-            C[k++] = A[i++];
+        while(i < xxx.length)
+            C[k++] = xxx[i++];
         
-        while(j < B.length)
-            C[k++] = B[j++];
+        while(j < xnxx.length)
+            C[k++] = xnxx[j++];
 
         return C;
     }
