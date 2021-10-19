@@ -20,7 +20,8 @@ public class helper {
     
         int[] A = {1, 2, 3, 4};
         int[] B = {2, 4, 5, 6};
-    
+        
+        System.out.println("sorted array");
         helper.outputArray(solution.mergeSortedArray(A, B));
     }
 }
